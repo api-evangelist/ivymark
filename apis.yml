@@ -1,7 +1,24 @@
 aid: ivymark
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ivymark.png
 name: ivymark
-description: ivymark is a company surfaced as a portfolio company of slow-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: ivymark was surfaced as a portfolio-company lead of Slow Ventures and added to the
+  API Evangelist network as a stub. Enrichment found that the repo domain ivymark.com 301-redirects
+  in full to www.ivy.co — Ivy, a business-management platform for interior designers (product sourcing,
+  proposals, invoices, client mood boards, project and time tracking, online payments, and reporting),
+  now operated as part of Houzz Pro. No public API, developer portal, OpenAPI, or well-known discovery
+  surface was found on either ivymark.com or ivy.co, so no API artifacts could be produced this round;
+  only the identity, verified marketing links, and a live domain-security probe are recorded.
 url: https://raw.githubusercontent.com/api-evangelist/ivymark/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Interior Design
+- Business Management
+- Design Software
+- Product Sourcing
+- Invoicing
+- Payments
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ivymark-domain-security.yml
 - type: Website
   url: https://ivymark.com
+- type: Pricing
+  url: https://www.ivy.co/designers/pricing
+- type: Blog
+  url: https://www.ivy.co/builders/blog/
+- type: TermsOfService
+  url: https://www.ivy.co/tos
+- type: PrivacyPolicy
+  url: https://www.ivy.co/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
