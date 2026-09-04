@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://ivymark.com', status: 301, note: 'declared website redirects to https://www.ivy.co/ — a different registrable domain (ivymark.com -> ivy.co), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ivymark.png
 name: ivymark
 description: ivymark was surfaced as a portfolio-company lead of Slow Ventures and added to the
